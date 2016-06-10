@@ -86,38 +86,167 @@
                 <!--div class="align-bottom relative-xs text-center">                    
                     <a class="btn btn-filled btn-lg mb32 mt-xs-40" href="#bot">Was möchtest Du über bitcoins wissen?</a>
                 </div-->
+                <div class="align-bottom text-center">                    
+                    <ul class="list-inline social-list mb24">
+                        <li>
+                            <a href="#">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ti-vimeo-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
             </section>
 
 
 <!-- BOT SECTION -->
             <section class="pt40 pb40">
                 <div class="container bot">
-                    <div class="row">
+                    <div class="row pb0">                        
                         <a name="bot"></a>
                         <h4>Frag mich was zum Thema!</h4>
                         <hr/>
-                        <h5>Wähle eine Frage aus oder schreib etwas</h5>                        
-                        <input type="text" id="input" placeholder="Was möchtest du zum Thema Bitcoins wissen?" />
-                        <ul class="pt16 mb0">   
+                        <h5 class="pb0"><strong>Wähle eine Frage aus oder schreibe etwas:</strong></h5>
+                    </div>
+                    <!--end of row-->
+
+<!-- BOT SMART QUESTIONS -->
+
+                    <div class="row">
+                        <ul class="pt0 mb0">   
+                            <li class="chat smartq" data-smartq="Gib mir eine Einführung zum Thema! Kurzbefehl: tldr"><a href="#">Gib mir eine Einführung zum Thema!</a></li>  
                             <li class="chat smartq" data-smartq="Wer hat Bitcoins erfunden?" class=""><a href="#">Wer hat Bitcoins erfunden?</a></li>
-                            <li class="chat answer" data-answer="all" class="">ANTWORT 1</li>
                             <li class="chat smartq" data-smartq="Sind Bitcoins sicher?" class="active"><a href="#">Sind Bitcoins sicher?</a></li>
-                            <li class="chat answer" data-answer="all" class="">ANTWORT 2</li>
                             <li class="chat smartq" data-smartq="Sollte ich Geld in Bitcoins anlegen?"><a href="#">Sollte ich Geld in Bitcoins anlegen?</a></li>
-                            <li class="chat answer" data-answer="all" class="">ANTWORT 3</li>
                         </ul>
-                                        
+                    </div>
+                    <!--end of row-->
+
+<!-- BOT Q1 -->
+                    <div class="row">
+                        <ul class="pt16 mb0">   
+                            <li class="chat question" data-smartq="Gib mir eine Einführung zum Thema! Kurzbefehl: tldr"><a href="#">Gib mir eine Einführung zum Thema!</a></li>                            
+                            <li class="chat answer" data-answer="all" class="">Bitcoin (englisch für „digitale Münze“) ist ein weltweit verwendbares dezentrales Zahlungssystem und der Name einer digitalen Geld­einheit. Überweisungen werden von einem Zusammenschluss von Rechnern über das Internet mithilfe abgewickelt. <br/>Wenn du möchtest zeige ich dir ein kurzes Einführungsvideo: <strong>Tippe "Video" wenn du es sehen willst.</strong></li>
+                        </ul>
+                    </div>
+                    <!--end of row-->
+
+                    <div class="row">
+                        <ul class="pt16 mb0">   
+                            <li class="chat question" data-smartq="Video"><a href="#">Video</a></li>
+                            <li class="chat answer" data-answer="all" class="">Bitte - hier ist das Einführungsvideo:</li>
+                        </ul>
+                    </div>
+                    <!--end of row-->
+
+<!-- BOT ANSWER 1 (VIDEO) -->
+                    <div class="row pb24">
+                        <div class="col-sm-6 text-center">
+                            <div class="embed-video-container embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2kPNz0tdlj0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <!--end of embed video container-->
+                        </div>                        
+                    </div>
+
+<!-- BOT Q2 -->
+
+                    <div class="row">
+                        <ul class="pt16 mb0">   
+                            <li class="chat question" data-smartq="Wer hat Bitcoins erfunden?" class=""><a href="#">Wer hat Bitcoins erfunden?</a></li>
+                            <li class="chat answer" data-answer="all" class="">Der Erfinder nennt sich "Satoshi Nakamoto", aber keiner weiss, wer er wirklich ist. <strong>Hier einige Artikel zu dem Thema:</strong></li>
+                        </ul>
                     </div>
                     <!--end of row-->
 
 
-<!-- BOT INCLUDE: CHART -->
+<!-- BOT ANSWER 2 (ARTICLE SUGGESTIONS) -->
+                    <div class="row pb24">                            
+                            <div class="col-sm-6 text-left">
+                                <table class="">
+                                    <!-- article1 -->
+                                    <tr>
+                                        <td width="40%">
+                                            <a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb1.jpg"></a>
+                                        </td>
+                                        <td width="60%" class="article-suggestions">
+                                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">Bitcoin-Kurs klettert rasant</a></h5>
+                                            <span class="date">31. Mai 2016, aktualisiert 31. Mai 2016, 20:52 Uhr</span>
+                                            <p class="article-abstract"><a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">Die Digitalwährung ist auf den höchsten Stand seit fast zwei Jahren gestiegen. Ein wesentlicher Grund für das Kursplus: die Begeisterung chinesischer Anleger.</a></p>
+                                        </td>
+                                    </tr>
+                                    <!-- article2 -->
+                                    <tr>
+                                        <td width="40%">
+                                            <a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb2.jpg"></a>
+                                        </td>
+                                        <td width="60%" class="article-suggestions">
+                                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">Bitcoins in der Schweiz</a></h5>
+                                            <span class="date">10. Mai 2016</span>                                        
+                                            <p class="article-abstract"><a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">Im Bürgerbüro den neuen Personalausweis mit Bitcoins zahlen? In Deutschland ist das bislang noch undenkbar. Aber vergleichbare Dinge sollen ab 1. Juli in der Stadt Zug in der Schweiz möglich sein - in einem Pilotprojekt.</a></p>
+                                        </td>
+                                    </tr>  
+                                    <!-- article3 -->
+                                    <tr>
+                                        <td width="40%">
+                                            <a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb3.jpg"></a>
+                                        </td>
+                                        <td width="60%" class="article-suggestions">
+                                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">Es ist egal, wer Satoshi Nakamoto ist</a></h5>
+                                            <span class="date">07. Mai 2016</span>                                        
+                                            <p class="article-abstract"><a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">Der Erfinder des Bitcoin hinter dem Pseudonym Satoshi Nakamoto wollte sich offenbaren. Doch Beweise fehlten. Zum Wohl des Bitcoin: Satoshi muss unerkannt bleiben.</a></p>
+                                        </td>
+                                    </tr>
+                                </table>                                        
+                            </div>   
+                            <div class="col-sm-6 text-center">
+                            </div>                          
+                        </div>
+                        <!--end of row-->  
 
-                    <div class="row pt24">
-                        <div class="col-sm-16">
-                            <h4 class="uppercase mb16">Umfrage zum Thema Bitcoins</h4>
+<!-- BOT Q3 -->
+
+                    <div class="row">
+                        <ul class="pt16 mb0">   
+                            <li class="chat question" data-smartq="Sollte ich Geld in Bitcoins anlegen?"><a href="#">Sollte ich Geld in Bitcoins anlegen?</a></li>
+                            <li class="chat answer" data-answer="all" class="">Ich habe hier ein Video für dich, das deine Frage beantworten könnte. Außerdem haben wir eine Umfrage gemacht. Tippe "Umfrage" wenn du sie sehen möchtest.</li>
+                        </ul>
+                    </div>
+                    <!--end of row-->
+
+<!-- BOT ANSWER 3 (VIDEO GELDANLAGE) -->
+                    <div class="row pb24">
+                        <div class="col-sm-6 text-center">
+                            <div class="embed-video-container embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ImNq64p_w3M" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <!--end of embed video container-->
+                        </div>                        
+                    </div>
+
+                    <div class="row">
+                        <ul class="pt16 mb0">   
+                            <li class="chat question" data-smartq="Umfrage"><a href="#">Umfrage</a></li>
+                            <li class="chat answer" data-answer="all" class="">Hier ist das Ergebnis unserer Umfrage:</li>
+                        </ul>
+                    </div>
+                    <!--end of row-->
+<!-- BOT ANSWER 4: CHART -->
+
+                    <div class="row pb24">
+                        <div class="col-md-6 col-sm-6 text-center">
+                            <h4 class="mb16 text-center">Umfrage zum Thema Bitcoins</h4>
                             <p class="lead mb32">
-                                Haben Sie schon mal etwas von Bitcoins gehört?
+                                Würden Sie Geld in Bitcoins anlegen?
                             </p>
                         </div>
                     </div>
@@ -126,14 +255,14 @@
                         <div class="col-md-6 col-sm-6 text-center">
                             <div class="progress-bars">
                                 <div class="progress progress-2">
-                                    <span class="title">Schon mal gehört</span>
+                                    <span class="title">Ich weiss nicht, was das ist</span>
                                     <div class="bar-holder">
                                         <div class="progress-bar" data-progress="40"></div>
                                     </div>
                                 </div>
                                 <!--end of progress bar-->
                                 <div class="progress progress-2">
-                                    <span class="title">Nie gehört</span>
+                                    <span class="title">Nein - zu unsicher</span>
                                     <div class="bar-holder">
                                         <div class="progress-bar" data-progress="50"></div>
                                     </div>
@@ -153,55 +282,20 @@
                     <!--end of row-->
 
 
-<!-- BOT INCLUDE: VIDEO -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 text-center">
-                                <h4 class="uppercase mb16">Video Titel</h4>
-                                <p class="lead mb32">
-                                    Video Description
-                                </p>
-                                <div class="embed-video-container embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="http://player.vimeo.com/video/25737856?badge=0&title=0&byline=0&title=0"></iframe>
-                                </div>
-                                <!--end of embed video container-->
-                            </div>                        
+<!-- BOT INPUT -->
+                    <div class="row pt24">
+                        <div class="col-md-12 col-sm-6 botinput">
+                            <input type="text" id="input" placeholder="Stelle eine Frage ..." /> <a class="ask btn btn-rounded" href="#">Abschicken</a>
                         </div>
                     </div>
-
-                    <div class="container">
-                        <div class="row">                            
-                            <div class="col-sm-6 text-left">
-                                <ul class="link-list recent-posts">
-                                    <li>
-                                        <a href="#">Hugging pugs is super trendy</a>
-                                        <span class="date">February
-                                            <span class="number">14, 2015</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#">Spinning vinyl is oh so cool</a>
-                                        <span class="date">February
-                                            <span class="number">9, 2015</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="#">Superior theme design by pros</a>
-                                        <span class="date">January
-                                            <span class="number">27, 2015</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                                </div>  
-                            </div>   
-                            <div class="col-sm-6 text-center">
-                            </div>                          
-                        </div>
-                        <!--end of row-->                    
-                    </div>
+                    <!--end of row-->                                        
+                    
                 </div>
                 <!--end of container-->
             </section>
+
+
+<!-- DEBUG ONLY: JSON RESPONSE -->
 
             <section class="pt40 pb40">
                 <div class="container">
@@ -214,6 +308,10 @@
                 </div>
                 <!--end of container-->
             </section>
+
+
+<!-- CONTENT SECTION BELOW -->
+
 
             <section class="pt40 pb40">
                 <div class="container">
@@ -240,7 +338,7 @@
                 <div class="row masonry masonryFlyIn">
                     <div class="col-sm-6 masonry-item project" data-filter="Kurs">
                         <div class="image-tile inner-title hover-reveal text-center">
-                            <a href="#">
+                            <a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">
                                 <img alt="Pic" src="img/wiwo/overview/1.jpeg" />
                                 <div class="title">
                                     <h5 class="uppercase mb32">Fast 550 Dollar</h5>
@@ -255,7 +353,7 @@
                     </div>
                     <div class="col-sm-6 masonry-item project" data-filter="Entwicklung">
                         <div class="image-tile inner-title hover-reveal text-center">
-                            <a href="#">
+                            <a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">
                                 <img alt="Pic" src="img/wiwo/overview/2.jpeg" />
                                 <div class="title">
                                     <h5 class="uppercase mb32">Schweizer Stadt Zug wird zum Bitcoin-Pionier</h5>
@@ -270,7 +368,7 @@
                     </div>
                     <div class="col-sm-6 masonry-item project" data-filter="Menschen">
                         <div class="image-tile inner-title hover-reveal text-center">
-                            <a href="#">
+                            <a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">
                                 <img alt="Pic" src="img/wiwo/overview/3.jpeg" />
                                 <div class="title">
                                     <h5 class="uppercase mb32">Kommentar</h5>                                    
@@ -340,25 +438,31 @@
                             </div>
                             <!--end of widget-->
                         </div>
+
+
+
                         <div class="col-md-3 col-sm-4">
                             <div class="widget">
                                 <h6 class="title">Verwandte Artikel</h6>
                                 <hr>
                                 <ul class="link-list recent-posts">
                                     <li>
-                                        <a href="#">Hugging pugs is super trendy</a>
+                                        <a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">Bitcoin-Kurs klettert rasant</a>
+                                        <span>Die Digitalwährung ist auf den höchsten Stand seit fast zwei Jahren gestiegen. Ein wesentlicher Grund für das Kursplus: die Begeisterung chinesischer Anleger.</span>
                                         <span class="date">February
                                             <span class="number">14, 2015</span>
                                         </span>
                                     </li>
                                     <li>
-                                        <a href="#">Spinning vinyl is oh so cool</a>
+                                        <a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">Bitcoins in der Schweiz</a>
+                                        <span>Im Bürgerbüro den neuen Personalausweis mit Bitcoins zahlen?</span>
                                         <span class="date">February
                                             <span class="number">9, 2015</span>
                                         </span>
                                     </li>
                                     <li>
-                                        <a href="#">Superior theme design by pros</a>
+                                        <a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">Es ist egal, wer Satoshi Nakamoto ist</a>
+                                        <span>Der Erfinder des Bitcoin hinter dem Pseudonym Satoshi Nakamoto wollte sich offenbaren. Doch Beweise fehlten. Zum Wohl des Bitcoin: Satoshi muss unerkannt bleiben.</span>
                                         <span class="date">January
                                             <span class="number">27, 2015</span>
                                         </span>
