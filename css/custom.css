@@ -5,3 +5,13 @@
 	font-weight: bold;
 }
 
+.filters li {
+	color: #aaa;
+	border: 2px solid #666;
+}
+
+.filters li.active {
+	border-color: #ff0000;
+}
+
+

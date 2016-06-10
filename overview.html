@@ -9,7 +9,7 @@
         <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme-nearblack.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     </head>
@@ -79,13 +79,50 @@
                     <!--end of row-->
                 </div>
                 <!--end of container-->
-                <div class="align-bottom relative-xs text-center">
-                    <input type="text" placeholder="Was möchtest du zum Thema Bitcoins wissen?" />
+                <div class="align-bottom relative-xs text-center">                    
+                    <input type="text" id="input" placeholder="Was möchtest du zum Thema Bitcoins wissen?" />
                 </div>
             </section>
 
+            <section class="pt40 pb40">
+                <div class="container">
+                    <div class="row">
+                        <ul class="pt16 smartq mb0">   
+                            <li data-filter="all" class="">All</li>
+                            <li data-filter="Kurs" class="active">Kurs</li>
+                            <li data-filter="Entwicklung">Entwicklung</li>
+                            <li data-filter="Menschen">Menschen</li>
+                            <li data-filter="Crime">Crime</li>
+                        </ul>
+
+                        <!--span class="smartq">Wer hat Bitcoins erfunden?<span>
+                        <span class="smartq">Sind Bitcoins sicher?<span-->
+                        <div class="col-sm-12">
+                            <textarea id="response" cols="40" rows="5"></textarea>                               
+                            <hr/>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+            <section class="pt40 pb40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3 class="mb0">Artikel zum Thema Bitcoins</h6>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
             <section class="projects p0 bg-dark">
-                <ul class="filters floating cast-shadow mb0">
+                <div class="row text-center fixed-center">
+                    <ul class="pt16 filters mb0">
+                </div>
                 </ul>
                 <div class="row masonry-loader fixed-center">
                     <div class="col-sm-12 text-center">
@@ -98,8 +135,12 @@
                             <a href="#">
                                 <img alt="Pic" src="img/wiwo/overview/1.jpeg" />
                                 <div class="title">
-                                    <h5 class="uppercase mb0">Fast 550 Dollar</h5>
-                                    <span>Bitcoin-Kurs klettert rasant</span>
+                                    <h5 class="uppercase mb32">Fast 550 Dollar</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h6 class="uppercase mb8 mt8">Bitcoin-Kurs klettert rasant</h6>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -109,9 +150,13 @@
                             <a href="#">
                                 <img alt="Pic" src="img/wiwo/overview/2.jpeg" />
                                 <div class="title">
-                                    <h5 class="uppercase mb0">Bitcoins in der Schweiz</h5>
-                                    <span>Schweizer Stadt Zug wird zum Bitcoin-Pionier</span>
+                                    <h5 class="uppercase mb32">Schweizer Stadt Zug wird zum Bitcoin-Pionier</h5>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h6 class="uppercase mb8 mt8">Bitcoins in der Schweiz</h6>
+                                    </div>
+                                </div>                                
                             </a>
                         </div>
                     </div>
@@ -120,9 +165,13 @@
                             <a href="#">
                                 <img alt="Pic" src="img/wiwo/overview/3.jpeg" />
                                 <div class="title">
-                                    <h5 class="uppercase mb0">Kommentar Bitcoin</h5>
-                                    <span>Es ist egal, wer Satoshi Nakamoto ist</span>
+                                    <h5 class="uppercase mb32">Kommentar</h5>                                    
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h6 class="uppercase mb8 mt8">Es ist egal, wer Satoshi Nakamoto ist</h6>
+                                    </div>
+                                </div>                                
                             </a>
                         </div>
                     </div>
@@ -131,9 +180,13 @@
                             <a href="#">
                                 <img alt="Pic" src="img/wiwo/overview/4.jpeg" />
                                 <div class="title">
-                                    <h5 class="uppercase mb0">„Satoshi Nakamoto“</h5>
-                                    <span>Verwirrung um angeblichen Bitcoin-Erfinder</span>
+                                    <h5 class="uppercase mb32">Verwirrung um angeblichen Bitcoin-Erfinder</h5>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h6 class="uppercase mb8 mt8">„Satoshi Nakamoto“</h6>
+                                    </div>
+                                </div>                                                                    
                             </a>
                         </div>
                     </div>
@@ -142,14 +195,112 @@
                             <a href="#">
                                 <img alt="Pic" src="img/wiwo/overview/5.jpeg" />
                                 <div class="title">
-                                    <h5 class="uppercase mb0">Cyberangriff auf Krankenhaus</h5>
-                                    <span>Die neuen Schutzgelderpresser</span>
+                                    <h5 class="uppercase mb32">Die neuen Schutzgelderpresser</h5>                                              
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h6 class="uppercase mb8 mt8">Cyberangriff auf Krankenhaus</h6>
+                                    </div>
+                                </div>                                
                             </a>
                         </div>
                     </div>
                 </div>
-                <!--end of row-->
+                <!--end of row-->                
+            </section>
+            <section>
+                <div class="container">
+                <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <div class="widget">
+                                <h6 class="title">Kategorien</h6>
+                                <hr>
+                                <ul class="link-list">
+                                    <li>
+                                        <a href="#">Währung</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Crime</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kurs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hintergründe</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="widget">
+                                <h6 class="title">Verwandte Artikel</h6>
+                                <hr>
+                                <ul class="link-list recent-posts">
+                                    <li>
+                                        <a href="#">Hugging pugs is super trendy</a>
+                                        <span class="date">February
+                                            <span class="number">14, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spinning vinyl is oh so cool</a>
+                                        <span class="date">February
+                                            <span class="number">9, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Superior theme design by pros</a>
+                                        <span class="date">January
+                                            <span class="number">27, 2015</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="widget">
+                                <h6 class="title">tl;dr</h6>
+                                <hr>
+                                <p>
+                                    Bitcoin (englisch für „digitale Münze“) ist ein weltweit verwendbares dezentrales Zahlungssystem und der Name einer digitalen Geld­einheit. Überweisungen werden von einem Zusammenschluss von Rechnern über das Internet mithilfe abgewickelt.
+                                </p>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="widget">
+                                <h6 class="title">Tags</h6>
+                                <hr>
+                                <ul class="tags">
+                                    <li>
+                                        <a class="btn btn-sm" href="#">Geld</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-sm" href="#">Währung</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-sm" href="#">Bitcoins</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-sm" href="#">Cyber</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-sm" href="#">Aktien</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-sm" href="#">Handel</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-sm" href="#">Wirtschaft</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                    </div>
+                </div>
             </section>
             <footer class="footer-1 bg-dark">
                 <div class="container">
@@ -253,5 +404,88 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/api.ai.min.js"></script>
+
+            <script type="text/javascript">
+        var accessToken = "8ce2e640a72d4ac4891f5b2fabbf9ef8";
+        var baseUrl = "https://api.api.ai/v1/";
+        $(document).ready(function() {
+            $("#input").keypress(function(event) {
+                if (event.which == 13) {
+                    event.preventDefault();
+                    send();
+                }
+            });
+            $("#rec").click(function(event) {
+                switchRecognition();
+            });
+        });
+        var recognition;
+        function startRecognition() {
+            recognition = new webkitSpeechRecognition();
+            recognition.onstart = function(event) {
+                updateRec();
+            };
+            recognition.onresult = function(event) {
+                var text = "";
+                for (var i = event.resultIndex; i < event.results.length; ++i) {
+                    text += event.results[i][0].transcript;
+                }
+                setInput(text);
+                stopRecognition();
+            };
+            recognition.onend = function() {
+                stopRecognition();
+            };
+            recognition.lang = "en-US";
+            recognition.start();
+        }
+    
+        function stopRecognition() {
+            if (recognition) {
+                recognition.stop();
+                recognition = null;
+            }
+            updateRec();
+        }
+        function switchRecognition() {
+            if (recognition) {
+                stopRecognition();
+            } else {
+                startRecognition();
+            }
+        }
+        function setInput(text) {
+            $("#input").val(text);
+            send();
+        }
+        function updateRec() {
+            $("#rec").text(recognition ? "Stop" : "Speak");
+        }
+        function send() {
+            var text = $("#input").val();
+            $.ajax({
+                type: "POST",
+                url: baseUrl + "query/",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                headers: {
+                    "Authorization": "Bearer " + accessToken
+                },
+                data: JSON.stringify({ q: text, lang: "en" }),
+                success: function(data) {
+                    setResponse(JSON.stringify(data, undefined, 2));
+                },
+                error: function() {
+                    setResponse("Internal Server Error");
+                }
+            });
+            setResponse("Loading...");
+        }
+        function setResponse(val) {
+            $("#response").text(val);
+        }
+    </script>
+
     </body>
 </html>
