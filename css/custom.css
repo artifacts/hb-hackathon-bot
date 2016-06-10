@@ -14,4 +14,52 @@
 	border-color: #ff0000;
 }
 
+.smartq {	
+	border: 2px solid #23a405;
+	border-radius: 25px;
+	display:table;
+	padding: 8px 16px 8px 16px;
+	color: #fff;
+	background-color: #23a405; 
+	font-style: italic;
+	margin-bottom: 24px;
+	font-size: 16px;
+}
+
+.answer {	
+	border: 2px solid #1854cf;
+	border-radius: 25px;
+	display: table;
+	padding: 8px 16px 8px 16px;
+	color: #fff;
+	background: #1854cf;
+	font-style: italic;
+	margin-bottom: 24px;
+	font-size: 16px;
+}
+
+.smartq a {
+	color: #fff;
+}
+
+.answer a {
+	color: #fff;
+}
+
+.bot {
+
+}
+
+.special {
+	background-color: #f00;
+	display: inline-block;
+	font-weight: bolder;
+	padding-left: 8px;
+	padding-right: 8px;	
+}
+
+h5.special {
+	color: #fff;
+}
+
 
