@@ -131,6 +131,33 @@
                     </div>
                     <!--end of row-->
 
+                    <div id="chatcontainer"></div>
+
+
+                    <!-- BOT INPUT -->
+                    <div class="row pt24">
+                        <div class="col-md-12 col-sm-6 botinput">
+                            <input type="text" id="input" placeholder="Stelle eine Frage ..." />
+                            <span id="btn_submit" class="ask btn btn-rounded" href="">Abschicken</span>
+                        </div>
+                    </div>
+
+<!-- DEBUG ONLY: JSON RESPONSE -->
+
+            <section class="pt40 pb40">
+                <div class="container">
+                        <div class="col-sm-12">
+                            <textarea id="response" cols="40" rows="5"></textarea>                               
+                            <hr/>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+
 <!-- BOT Q1 -->
                     <div class="row">
                         <ul class="pt16 mb0">   
@@ -282,12 +309,7 @@
                     <!--end of row-->
 
 
-<!-- BOT INPUT -->
-                    <div class="row pt24">
-                        <div class="col-md-12 col-sm-6 botinput">
-                            <input type="text" id="input" placeholder="Stelle eine Frage ..." /> <a class="ask btn btn-rounded" href="#">Abschicken</a>
-                        </div>
-                    </div>
+
                     <!--end of row-->                                        
                     
                 </div>
@@ -295,19 +317,7 @@
             </section>
 
 
-<!-- DEBUG ONLY: JSON RESPONSE -->
 
-            <section class="pt40 pb40">
-                <div class="container">
-                        <div class="col-sm-12">
-                            <textarea id="response" cols="40" rows="5"></textarea>                               
-                            <hr/>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
 
 
 <!-- CONTENT SECTION BELOW -->
@@ -631,6 +641,9 @@
             $("#rec").click(function(event) {
                 switchRecognition();
             });
+            $('#btn_submit').on('click', function(){
+                send();
+            })
         });
         var recognition;
         function startRecognition() {
