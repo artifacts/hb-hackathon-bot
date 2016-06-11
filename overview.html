@@ -115,12 +115,17 @@
                         <a name="bot"></a>
                         <h4>Frag mich was zum Thema!</h4>
                         <hr/>
-                        <h5 class="pb0"><strong>Wähle eine Frage aus oder schreibe etwas:</strong></h5>
                     </div>
                     <!--end of row-->
 
 <!-- BOT SMART QUESTIONS -->
 
+
+                     <div id="chatcontainer"></div>
+                    <div class="row pb0">                        
+                        <hr/>
+                        <h5 class="pb0"><strong>Wähle eine Frage aus oder schreibe etwas:</strong></h5>
+                    </div>
                     <div class="row">
                         <ul class="pt0 mb0">   
                             <li class="chat smartq" data-smartq="Gib mir eine Einführung zum Thema! Kurzbefehl: tldr"><a href="#">Gib mir eine Einführung zum Thema!</a></li>  
@@ -130,6 +135,169 @@
                         </ul>
                     </div>
                     <!--end of row-->
+
+                   
+
+
+                    <!-- BOT INPUT -->
+                    <div class="row pt24">
+                        <div class="col-md-12 col-sm-6 botinput">
+                            <input type="text" id="input" placeholder="Stelle eine Frage ..." />
+                            <span id="btn_submit" class="ask btn btn-rounded" href="">Abschicken</span>
+                        </div>
+                    </div>
+
+<!-- DEBUG ONLY: JSON RESPONSE -->
+
+            <section class="pt40 pb40">
+                <div class="container">
+                        <div class="col-sm-12">
+                            <textarea id="response" cols="40" rows="5"></textarea>                               
+                            <hr/>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+<style> 
+  .tmpl {display:none;}
+</style>
+<div class="tmpl" id="question">
+    <div class="row">
+        <ul class="pt16 mb0">   
+            <li class="chat question">***text***</li>                            
+        </ul>
+    </div>
+</div>
+
+<div class="tmpl" id="answer">
+    <div class="row">
+        <ul class="pt16 mb0">   
+            <li class="chat answer">***text***</li>                            
+        </ul>
+    </div>
+</div>
+
+<div class="tmpl" id="youtube">
+    <div class="row pb24">
+        <div class="col-sm-6 text-center">
+            <div class="embed-video-container embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="***url***" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-6 text-center">
+                &nbsp;
+            </div>               
+            <!--end of embed video container-->
+        </div>                        
+    </div>
+</div>
+
+<div class="tmpl" id="article">
+
+    <div class="" class="row pb24">                            
+            <div class="col-sm-6 text-left">
+                <table class="">
+                    <!-- article1 -->
+                    <tr>
+                        <td width="40%">
+                            <a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb1.jpg"></a>
+                        </td>
+                        <td width="60%" class="article-suggestions">
+                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">***title***</a></h5>
+                            <span class="date">31. Mai 2016, aktualisiert 31. Mai 2016, 20:52 Uhr</span>
+                            <p class="article-abstract"><a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">Die Digitalwährung ist auf den höchsten Stand seit fast zwei Jahren gestiegen. Ein wesentlicher Grund für das Kursplus: die Begeisterung chinesischer Anleger.</a></p>
+                        </td>
+                    </tr>
+                    <!-- article2 -->
+                    <!--<tr>
+                        <td width="40%">
+                            <a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb2.jpg"></a>
+                        </td>
+                        <td width="60%" class="article-suggestions">
+                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">Bitcoins in der Schweiz</a></h5>
+                            <span class="date">10. Mai 2016</span>                                        
+                            <p class="article-abstract"><a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">Im Bürgerbüro den neuen Personalausweis mit Bitcoins zahlen? In Deutschland ist das bislang noch undenkbar. Aber vergleichbare Dinge sollen ab 1. Juli in der Stadt Zug in der Schweiz möglich sein - in einem Pilotprojekt.</a></p>
+                        </td>
+                    </tr>  -->
+                    <!-- article3 -->
+                    <!--<tr>
+                        <td width="40%">
+                            <a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb3.jpg"></a>
+                        </td>
+                        <td width="60%" class="article-suggestions">
+                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">Es ist egal, wer Satoshi Nakamoto ist</a></h5>
+                            <span class="date">07. Mai 2016</span>                                        
+                            <p class="article-abstract"><a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">Der Erfinder des Bitcoin hinter dem Pseudonym Satoshi Nakamoto wollte sich offenbaren. Doch Beweise fehlten. Zum Wohl des Bitcoin: Satoshi muss unerkannt bleiben.</a></p>
+                        </td>
+                    </tr>-->
+                </table>                                        
+            </div>   
+            <div class="col-sm-6 text-center">
+                &nbsp;
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>                
+            </div>                          
+        </div>
+</div>
+
+
+
+<div class="tmpl" id="topic__bitcoin">
+
+    <div class="" class="row pb24">                            
+            <div class="col-sm-6 text-left">
+                <table class="">
+                    <!-- article1 -->
+                    <tr>
+                        <td width="40%">
+                            <a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb1.jpg"></a>
+                        </td>
+                        <td width="60%" class="article-suggestions">
+                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">Bitcoin-Kurs klettert rasant</a></h5>
+                            <span class="date">31. Mai 2016, aktualisiert 31. Mai 2016, 20:52 Uhr</span>
+                            <p class="article-abstract"><a href="http://www.wiwo.de/finanzen/boerse/fast-550-dollar-bitcoin-kurs-klettert-rasant/13670832.html">Die Digitalwährung ist auf den höchsten Stand seit fast zwei Jahren gestiegen. Ein wesentlicher Grund für das Kursplus: die Begeisterung chinesischer Anleger.</a></p>
+                        </td>
+                    </tr>
+                    <!-- article2 -->
+                    <tr>
+                        <td width="40%">
+                            <a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb2.jpg"></a>
+                        </td>
+                        <td width="60%" class="article-suggestions">
+                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">Bitcoins in der Schweiz</a></h5>
+                            <span class="date">10. Mai 2016</span>                                        
+                            <p class="article-abstract"><a href="http://www.wiwo.de/finanzen/geldanlage/bitcoins-in-der-schweiz-schweizer-stadt-zug-wird-zum-bitcoin-pionier/13574510.html">Im Bürgerbüro den neuen Personalausweis mit Bitcoins zahlen? In Deutschland ist das bislang noch undenkbar. Aber vergleichbare Dinge sollen ab 1. Juli in der Stadt Zug in der Schweiz möglich sein - in einem Pilotprojekt.</a></p>
+                        </td>
+                    </tr>  
+                    <!-- article3 -->
+                    <tr>
+                        <td width="40%">
+                            <a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html" class="article-thumb"><img height="128" class="mb24" alt="" src="img/thumb3.jpg"></a>
+                        </td>
+                        <td width="60%" class="article-suggestions">
+                            <h5 class="mb0 pt0"><a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">Es ist egal, wer Satoshi Nakamoto ist</a></h5>
+                            <span class="date">07. Mai 2016</span>                                        
+                            <p class="article-abstract"><a href="http://www.wiwo.de/unternehmen/it/bitcoin-es-ist-egal-wer-satoshi-nakamoto-ist/13559906.html">Der Erfinder des Bitcoin hinter dem Pseudonym Satoshi Nakamoto wollte sich offenbaren. Doch Beweise fehlten. Zum Wohl des Bitcoin: Satoshi muss unerkannt bleiben.</a></p>
+                        </td>
+                    </tr>
+                </table>                                        
+            </div>   
+            <div class="col-sm-6 text-center">
+                &nbsp;
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br>              
+            </div>                          
+        </div>
+</div>
+
 
 <!-- BOT Q1 -->
                     <div class="row">
@@ -282,12 +450,7 @@
                     <!--end of row-->
 
 
-<!-- BOT INPUT -->
-                    <div class="row pt24">
-                        <div class="col-md-12 col-sm-6 botinput">
-                            <input type="text" id="input" placeholder="Stelle eine Frage ..." /> <a class="ask btn btn-rounded" href="#">Abschicken</a>
-                        </div>
-                    </div>
+
                     <!--end of row-->                                        
                     
                 </div>
@@ -295,19 +458,7 @@
             </section>
 
 
-<!-- DEBUG ONLY: JSON RESPONSE -->
 
-            <section class="pt40 pb40">
-                <div class="container">
-                        <div class="col-sm-12">
-                            <textarea id="response" cols="40" rows="5"></textarea>                               
-                            <hr/>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
 
 
 <!-- CONTENT SECTION BELOW -->
@@ -617,6 +768,7 @@
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/api.ai.min.js"></script>
+        <script src="js/chatbot.ui.js"></script>
 
             <script type="text/javascript">
         var accessToken = "8ce2e640a72d4ac4891f5b2fabbf9ef8";
@@ -631,6 +783,10 @@
             $("#rec").click(function(event) {
                 switchRecognition();
             });
+            $('#btn_submit').on('click', function(){
+                send();
+            })
+            ui.add('answer',{text: 'Hi, ich bin der WiWo Assistent. Was möchtest Du zu Bitcoins Wissen?'});
         });
         var recognition;
         function startRecognition() {
@@ -674,8 +830,14 @@
         function updateRec() {
             $("#rec").text(recognition ? "Stop" : "Speak");
         }
-        function send() {
-            var text = $("#input").val();
+        function send(text) {
+            var text = $("#input").val() || text;
+            $("#input").val('');
+            if (!text){
+                ui.add('answer',{text: '...'});
+                return false;
+            }
+            ui.add('question',{text: text});
             $.ajax({
                 type: "POST",
                 url: baseUrl + "query/",
@@ -687,6 +849,10 @@
                 data: JSON.stringify({ q: text, lang: "en" }),
                 success: function(data) {
                     setResponse(JSON.stringify(data, undefined, 2));
+
+                    if (data.result){
+                        ui.addAI(data.result);
+                    }
                 },
                 error: function() {
                     setResponse("Internal Server Error");
@@ -694,6 +860,13 @@
             });
             setResponse("Loading...");
         }
+
+        $('.smartq').on('click', function(){
+            event.preventDefault();
+            send($(this).data('smartq') || 'empty smart answer');
+             $(this).hide('slow', function(){ $(this).remove(); });
+        });
+
         function setResponse(val) {
             $("#response").text(val);
         }
