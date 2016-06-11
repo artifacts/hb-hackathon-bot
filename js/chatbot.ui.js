@@ -20,7 +20,9 @@ ui.add = function(tmpl, data){
       html = html.replace('***'+x+'***', data[x]);
   }
   //$container.append($(html));
-  $(html).insertBefore($container).hide().slideDown("slow");
+  var $temp = $(html).insertBefore($container).hide().slideDown("slow", function(){
+    //debugger;
+  });
 }
 
 ui.addAI = function(data){
@@ -30,7 +32,8 @@ ui.addAI = function(data){
 
     switch (data.action){
         case 'showVideo':
-            ui.add('youtube', {url: data.parameters.URL});
+            var url = data.parameters.URL.replace('watch?v=','embed/'); 
+            ui.add('youtube', {url:url});
             break;
         case 'openArticle':
             ui.add('article', {title: data.resolvedQuery, url: data.parameters.URL});
